@@ -10,12 +10,12 @@
     <property name="phpcs" value="/usr/bin/phpcs"/>
     <property name="phpmetrics" value="/usr/bin/phpmetrics"/>
     <target name="full-build"
-            depends="prepare, static-analysis, phpunit,phpdox, -check-failure"
+            depends="prepare, static-analysis, phpunit,phpdox,phpmetrics, -check-failure"
             description="Performs static analysis, runs tests and generates project dpcumentation">
     </target>
 
     <target name="full-build-parallel"
-            depends="prepare,static-analysis-parallel,phpunit,phpdox, -check-failure"
+            depends="prepare,static-analysis-parallel,phpunit,phpmetrics,phpdox, -check-failure"
             description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation">
     </target>
 
@@ -53,6 +53,7 @@
         <delete dir="${basedir}/build/logs"/>
         <delete dir="${basedir}/build/pdepend"/>
         <delete dir="${basedir}/build/phpdox"/>
+        <delete dir="${basedir}/build/phpmetrics"/>
         <property name="clean.done" value="true"/>
     </target>
 
@@ -67,6 +68,7 @@
         <mkdir dir="${basedir}/build/logs"/>
         <mkdir dir="${basedir}/build/pdepend"/>
         <mkdir dir="${basedir}/build/phpdox"/>
+        <mkdir dir="${basedir}/build/phpmetrics"/>
         <property name="prepare.done" value="true"/>
     </target>
 
