@@ -179,14 +179,14 @@
             unless="phpcs.done"
             description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
         <exec executable="${phpcs}" taskname="phpcs">
-           <!-- <arg value="--standard=PSR2" />
-<!--            <arg value="&#45;&#45;standard=PHPCS" />
+           <!-- <arg value="&#45;&#45;standard=PSR2" />
+           <arg value="&#45;&#45;standard=PHPCS" />
             <arg value="&#45;&#45;standard=Zend" />
             <arg value="&#45;&#45;standard=PEAR" />
             <arg value="&#45;&#45;standard=MySource" />
             <arg value="&#45;&#45;standard=PSR1" />
             <arg value="&#45;&#45;standard=Squiz" />-->
-			<arg value="&#45;&#45;standard=ruleset.xml" />
+			<arg value="--standard=ruleset.xml" />
             <arg value="--extensions=php" />
             <arg value="--ignore=autoload.php" />
             <arg path="${basedir}/src" />
