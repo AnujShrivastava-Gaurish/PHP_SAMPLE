@@ -271,12 +271,12 @@
             unless="phpmetrics.done"
             description="generate phpmetrics reports">
 		<exec executable="${phpmetrics}" taskname="phpmetrics">
-            <arg value="--report-html=${basedir}/build/logs/phpmetrics.html"/>
-			<arg path="${basedir}/src"/>
-            <arg value="--report-violations=${basedir}/build/violations.xml"/>
-            <arg path="${basedir}/src"/>
+            <arg value="--report-html=build/logs/phpmetrics.html"/>
+			<arg path="./src"/>
+            <arg value="--report-violations=build/violations.xml"/>
+            <arg path="./src"/>
         </exec>
-
+		
         <property name="phpmetrics.done" value="true"/>
     </target>
 
