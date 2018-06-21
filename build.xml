@@ -276,6 +276,11 @@
             <arg value="--report-html=${basedir}/build/logs/phpmetrics.html"/>
             <arg path="${basedir}/src"/>
         </exec>
+		<exec executable="${phpmetrics}" taskname="phpmetrics">
+            <arg value="--report-html=${basedir}/build/logs/phpmetrics.html"/>
+            <arg value="--report-violations=${basedir}/build/violations.xml"/>
+            <arg path="${basedir}/src"/>
+        </exec>
 
         <property name="phpmetrics.done" value="true"/>
     </target>
