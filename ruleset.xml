@@ -3,6 +3,10 @@
     <description>My Project Coding Standard</description>
 
     <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+	<rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+	<rule ref="Generic.Classes.DuplicateClassName"/>
+	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+	<rule ref="Generic.PHP.Syntax"/>
     <!--<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.Arrays.DisallowShortArraySyntax"/>
     <rule ref="Generic.Classes.DuplicateClassName"/>
