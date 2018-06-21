@@ -2,12 +2,7 @@
 <ruleset name="PHP_BASIC">
     <description>My Project Coding Standard</description>
 
-    <rule ref="Generic.PHP.DisallowShortOpenTag"/>
-	<rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
-	<rule ref="Generic.Classes.DuplicateClassName"/>
-	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
-	<rule ref="Generic.PHP.Syntax"/>
-    <!--<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.Arrays.DisallowShortArraySyntax"/>
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
@@ -61,8 +56,8 @@
     <rule ref="Generic.PHP.UpperCaseConstant"/>
     <rule ref="Generic.Strings.UnnecessaryStringConcat"/>
     <rule ref="Generic.VersionControl.SubversionProperties"/>
-    <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
-    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
-    <rule ref="Generic.WhiteSpace.ScopeIndent"/>-->
+    <!-- <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/> -->
+    <rule ref="Generic.WhiteSpace.ScopeIndent"/>
     <!-- ... -->
 </ruleset>
