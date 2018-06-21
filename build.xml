@@ -8,7 +8,7 @@
     <property name="phpmd" value="/usr/bin/phpmd"/>
     <property name="phpdox" value="/usr/bin/phpdox"/>
     <property name="phpcs" value="/usr/bin/phpcs"/>
-    <property name="phpmetrics" value="phpmetrics"/>
+    <property name="phpmetrics" value="/usr/bin/phpmetrics"/>
     <target name="full-build"
             depends="prepare, static-analysis, phpunit,phpdox, -check-failure"
             description="Performs static analysis, runs tests and generates project dpcumentation">
