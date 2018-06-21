@@ -1,0 +1,110 @@
+	.container 
+	{
+		padding: 20px;
+	}
+	form
+	{
+		padding-left:2%;
+		background-color:  #34495e;
+		box-shadow:5px 5px 10px 5px black;
+	}
+	label
+	{
+		color:white;
+		font-size:18px;
+	}
+	.col
+	{
+		float: left;
+		width: 31%;
+		margin-top: 6px;
+	}
+	.innerCol
+	{
+		float:left;
+		width:2%;
+		text-align:left;
+	}
+	/* Clear floats after the columns */
+	.row:after 
+	{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.row {
+		width: 100%;
+		min-height: 50px;
+		clear: both;
+	}
+	
+	/* All input select field styling */
+	input[type=text], input[type=password], input[type=email], select, textarea
+	{
+		width:78%;
+		height:22px;
+	}
+	textarea{
+		height: 45px;
+	}
+	select {
+		width: 79.5%;
+	}
+	#heading 
+	{
+		text-align:center;
+		font-size:20px;
+		color:#ffff;
+	}
+	/* Error field styling */
+	.asterisk, .error
+	{
+		color:red;
+		font-style:italic;
+	}
+	
+	.errorBorder
+	{
+		border:0.01em solid red;
+	}
+	
+	input[type="submit"],input[type="reset"]
+	{
+		background-color:white;
+		font-style:bold;
+		cursor:pointer;
+		height:30px;
+	}
+	table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td, th 
+		{
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 5px;
+		}
+
+		tr:nth-child(even)
+		{
+			background-color: pink;
+		}
+		tr:nth-child(odd) 
+		{
+			background-color: white;
+		}
+		input[type=button]
+		{
+			background-color:white;
+			font-style:bold;
+			font-size:18px;
+			border-radius:5px;
+			cursor:pointer;
+		}
+		a 
+		{
+			text-decoration: none;
+		} 
