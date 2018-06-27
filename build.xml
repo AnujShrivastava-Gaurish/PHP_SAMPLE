@@ -54,7 +54,6 @@
         <delete dir="${basedir}/build/pdepend"/>
         <delete dir="${basedir}/build/phpdox"/>
         <delete dir="${basedir}/build/phpmetrics"/>
-        <delete dir="${basedir}/reports"/>
         <property name="clean.done" value="true"/>
     </target>
 
@@ -70,7 +69,6 @@
         <mkdir dir="${basedir}/build/pdepend"/>
         <mkdir dir="${basedir}/build/phpdox"/>
         <mkdir dir="${basedir}/build/phpmetrics"/>
-        <mkdir dir="${basedir}/reports"/>
         <property name="prepare.done" value="true"/>
     </target>
 
