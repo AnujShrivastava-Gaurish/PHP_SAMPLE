@@ -1,4 +1,5 @@
 <?php
+
 	require_once("ClassPdo.php");
 	$conn=new ClassPdo();
 	extract($_REQUEST); //it will extract all the value of query string
@@ -12,7 +13,6 @@
 			in database and "false" value when email is not found
 			in database at the time of insertion.
 		*/ 
-		
 		$r=$conn->checkEmail($email);
 		
 		if($r=="true")
