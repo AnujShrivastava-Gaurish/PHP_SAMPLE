@@ -5,8 +5,8 @@
             <include mask="*.php" />
         </collector>
 
-        <generator output="${basedir}/build/api">
-            <enrich base="${basedir}/build">
+        <generator output="${basedir}/reports/api">
+            <enrich base="${basedir}/reports">
                 <source type="build" />
                 <source type="checkstyle" />
                 <source type="pmd" />
